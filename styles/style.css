@@ -40,6 +40,7 @@ body {
     margin: 4em 0 2em 0;
     border-radius: 10px;
     transition: all .5s;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.438);
 }
 
 .card > div {
