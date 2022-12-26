@@ -39,6 +39,7 @@ body {
     width: 270px;
     margin: 4em 0 2em 0;
     border-radius: 10px;
+    transition: all .5s;
 }
 
 .card > div {
@@ -110,4 +111,57 @@ p {
 
 .attribution a {
      color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 900px;
+        height: 50%;
+    }
+
+    .card > div {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5em;
+    }
+
+    .card img {
+        width: 80px;
+    }
+
+    .card a {
+        font-size: .9125rem;
+        position: absolute;
+        bottom: 10%;
+        width: 17%;
+        text-align: center;
+    }
+
+    .sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .luxury {
+        border-radius: 0 10px 10px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: .9125rem;
+        padding-right: 1em;
+        line-height: 1.5rem;
+    }
 }
