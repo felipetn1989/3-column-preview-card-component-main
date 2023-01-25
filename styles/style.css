@@ -102,7 +102,7 @@ body {
 .card {
   width: 20.375rem;
   margin: 4rem 0 2rem 0;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   transition: all 0.5s;
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.438);
 }
@@ -118,7 +118,7 @@ h1 {
 
 .sedans {
   background-color: var(--Bright-orange);
-  border-radius: .75rem .75rem 0 0;
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .sedans a {
@@ -135,7 +135,7 @@ h1 {
 
 .luxury {
   background-color: var(--Very-dark-cyan);
-  border-radius: 0 0 .75rem .75rem;
+  border-radius: 0 0 0.75rem 0.75rem;
 }
 
 .luxury a {
@@ -151,7 +151,7 @@ h1 {
 
 p {
   color: var(--Transparent-white);
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   margin-bottom: 2.25rem;
   line-height: 1.5rem;
 }
@@ -162,17 +162,18 @@ p {
   padding: 0.875rem 2.25rem;
   border-radius: 1.5rem;
   font-size: 0.875rem;
+  border: 1px solid var(--Very-light-gray);
 }
 
 .card a:hover {
   cursor: pointer;
   background-color: transparent;
   color: var(--Very-light-gray);
-  border: 2px solid var(--Very-light-gray);
+  border: 1px solid var(--Very-light-gray);
 }
 
 .attribution {
-  font-size: .6875rem;
+  font-size: 0.6875rem;
   text-align: center;
 }
 
@@ -192,42 +193,45 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 900px;
-    min-height: 50%;
+    width: 57.5rem;
   }
 
   .card > div {
     display: flex;
     flex-direction: column;
-    padding: 2.5em;
+    justify-content: space-between;
+    padding: 3rem 2rem 3rem 3rem;
   }
 
   .card img {
-    width: 80px;
+    width: 4rem;
   }
 
   .card a {
+    width: 9.5rem;
     font-size: 0.9125rem;
-    width: 60%;
     text-align: center;
+    padding: 0.75rem 1rem;
+    margin-top: 3.25rem;
   }
 
   .sedans {
-    border-radius: 10px 0 0 10px;
+    border-radius: 0.625rem 0 0 0.625rem;
   }
 
   .luxury {
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 0.625rem 0.625rem 0;
   }
 
   h1 {
     font-size: 2.5rem;
+    margin-bottom: 1.1875rem;
   }
 
   p {
     font-size: 0.9125rem;
-    padding-right: 1em;
+    padding-bottom: unset;
+    padding-right: 1rem;
     line-height: 1.5rem;
-    margin-bottom: 5em;
   }
 }
